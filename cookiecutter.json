@@ -1,0 +1,9 @@
+{
+  "templates": {
+    "project": {
+      "path":"./project",
+      "title": "Django project",
+      "description": "A cookiecutter template for a Django project"
+    }
+  }
+}
