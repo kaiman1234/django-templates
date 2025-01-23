@@ -44,6 +44,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # third party apps
+{%- if cookiecutter.use_django_extensions %}
+    'django_extensions',
+{%- endif %}
 ]
 
 MIDDLEWARE = [
