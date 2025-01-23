@@ -49,6 +49,9 @@ INSTALLED_APPS = [
 {%- if cookiecutter.use_django_extensions %}
     'django_extensions',
 {%- endif %}
+{%- if cookiecutter.use_django_model_utils %}
+    'model_utils',
+{%- endif %}
 ]
 
 MIDDLEWARE = [

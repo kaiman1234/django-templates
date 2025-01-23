@@ -18,3 +18,6 @@ environs = {extras = ["django"], version = "^14.1.0"}
 {%- if cookiecutter.use_django_extensions %}
 django-extensions = "^3.2.3"
 {%- endif %}
+{%- if cookiecutter.use_django_model_utils %}
+django-model-utils = "^5.0.0"
+{%- endif %}

@@ -9,7 +9,9 @@
   "__secret_key": "{{ (random_ascii_string(60, True) | replace('\"', ''))[:50] }}",
   "allowed_hosts": "*",
   "use_django_extensions": true,
+  "use_django_model_utils": true,
   "__prompts__": {
-    "use_django_extensions": "Use django-extensions"
+    "use_django_extensions": "Use django-extensions",
+    "use_django_model_utils": "Use django-model-utils"
   }
 }
