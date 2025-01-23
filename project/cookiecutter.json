@@ -6,5 +6,6 @@
   "description": "Description of your project",
   "__django_version": "5.1.5",
   "__docs_version": "5.1",
-  "__secret_key": "{{ (random_ascii_string(60, True) | replace('\"', ''))[:50] }}"
+  "__secret_key": "{{ (random_ascii_string(60, True) | replace('\"', ''))[:50] }}",
+  "allowed_hosts": "*"
 }
