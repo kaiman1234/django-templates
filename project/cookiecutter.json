@@ -1,6 +1,9 @@
 {
-  "project_name": "New project",
+  "full_name": "Your name",
+  "email": "Your email",
+  "project_name": "New django project",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "description": "Description of your project",
   "django_version": "5.1",
   "docs_version": "5.1",
   "secret_key": "{{ (random_ascii_string(60, True) | replace('\"', ''))[:50] }}"
