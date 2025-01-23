@@ -149,3 +149,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 MEDIA_ROOT = PROJECT_DIR / 'public' / 'media'
 MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
+
+
+{% if cookiecutter.use_secure_proxy -%}
+# Secure proxy
+# https://docs.djangoproject.com/en/{{ cookiecutter.__docs_version }}/ref/settings/#secure-proxy-ssl-header
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+{% endif -%}

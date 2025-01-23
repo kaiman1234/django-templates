@@ -19,3 +19,11 @@ The source of the Django project is under ``src``.
   [Github](https://github.com/jazzband/django-model-utils)
   [Docs](https://django-model-utils.readthedocs.io/en/latest/)
 {%- endif %}
+
+## Settings
+
+### Security
+
+{%- if cookiecutter.use_secure_proxy %}
+- Use HTTP header to determine secure connection (HTTPS)
+{%- endif %}

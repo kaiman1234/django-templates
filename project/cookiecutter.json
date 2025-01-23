@@ -10,8 +10,10 @@
   "allowed_hosts": "*",
   "use_django_extensions": true,
   "use_django_model_utils": true,
+  "use_secure_proxy": true,
   "__prompts__": {
     "use_django_extensions": "Use django-extensions",
-    "use_django_model_utils": "Use django-model-utils"
+    "use_django_model_utils": "Use django-model-utils",
+    "use_secure_proxy": "Use secure proxy"
   }
 }
