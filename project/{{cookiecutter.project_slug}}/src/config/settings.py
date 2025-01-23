@@ -131,8 +131,21 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/{{ cookiecutter.__docs_version }}/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = PROJECT_DIR / 'public' / 'static'
+STATIC_ROOT.mkdir(parents=True, exist_ok=True)
+
+STATICFILES_DIRS = []
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/{{ cookiecutter.__docs_version }}/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Media files
+# https://docs.djangoproject.com/en/{{ cookiecutter.__docs_version }}/topics/files/
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = PROJECT_DIR / 'public' / 'media'
+MEDIA_ROOT.mkdir(parents=True, exist_ok=True)
